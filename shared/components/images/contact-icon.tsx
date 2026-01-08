@@ -1,12 +1,13 @@
 import { SVGProps } from "react";
 
-interface ContactIconProps extends SVGProps<SVGSVGElement> {}
+type ContactIconProps = SVGProps<SVGSVGElement>;
 
 export default function ContactIcon({ className, ...props }: ContactIconProps) {
   return (
     <svg
-      width="133"
-      height="130"
+      width="62"
+      height="62"
+      //
       viewBox="0 0 133 130"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

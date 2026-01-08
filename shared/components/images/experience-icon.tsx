@@ -1,6 +1,6 @@
 import { SVGProps } from "react";
 
-interface ExperienceIconProps extends SVGProps<SVGSVGElement> {}
+type ExperienceIconProps = SVGProps<SVGSVGElement>;
 
 export default function ExperienceIcon({
   className,

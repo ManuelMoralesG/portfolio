@@ -1,6 +1,6 @@
 import { SVGProps } from "react";
 
-interface SkillsIconProps extends SVGProps<SVGSVGElement> {}
+type SkillsIconProps = SVGProps<SVGSVGElement>;
 
 export default function SkillsIcon({ className, ...props }: SkillsIconProps) {
   return (

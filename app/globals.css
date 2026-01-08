@@ -4,11 +4,6 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --projects-main: #5777f7;
-  --experience-main: #41ba31;
-  --skills-main: #f25252;
-  --education-main: #f77f2a;
-  --contact-main: #a853ea;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -48,6 +43,14 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --font-konkhmer: var(--font-konkhmer-sleokchher);
+  --font-ibm-mono: var(--font-ibm-plex-mono);
+  --font-roboto-mono: var(--font-roboto-mono);
+
+  --color-contact-main: var(--contact-main);
+  --color-contact-background: var(--contact-background);
+
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -89,6 +92,12 @@
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
+  --projects-main: #375df6;
+  --experience-main: #3aa52c;
+  --skills-main: #f03d3d;
+  --education-main: #f66c09;
+  --contact-main: #8d1ce3;
+  --contact-background: #1a002f;
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
@@ -110,7 +119,7 @@
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: hsl(240 5.9% 10%);
+  --sidebar: hsl(0, 0%, 14.9%);
   --sidebar-foreground: hsl(240 4.8% 95.9%);
   --sidebar-primary: hsl(224.3 76.3% 48%);
   --sidebar-primary-foreground: hsl(0 0% 100%);
