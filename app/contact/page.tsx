@@ -17,29 +17,29 @@ export default function ContactPage() {
 
       <section>
         <a href="mailto:manuelmoralesg2504@gmail.com">
-          <div className="flex items-center justify-center">
-            <ContactIcon />
-            <p>manuelmoralesg2504@gmail.com</p>
+          <div className="bg-contact-main flex items-center justify-center gap-6 rounded-xl p-2">
+            <ContactIcon className="size-12" />
+            <p className="text-lg font-medium">manuelmoralesg2504@gmail.com</p>
           </div>
         </a>
 
         <a target="_blank" href="#">
           <div className="flex items-center justify-start">
-            <LinkedInIcon />
+            <LinkedInIcon className="size-12" />
             <p>José Manuel Morales</p>
           </div>
         </a>
 
         <a target="_blank" href="https://github.com/ManuelMoralesG">
           <div className="flex items-center justify-start">
-            <GithubIcon />
+            <GithubIcon className="size-12" />
             <p>ManuelMoralesG</p>
           </div>
         </a>
 
         <a target="_blank" href="https://twitter.com/@ChepeXD4">
           <div className="flex items-center justify-start">
-            <TwitterIcon />
+            <TwitterIcon className="size-12" />
             <p>@ChepeXD4</p>
           </div>
         </a>
