@@ -23,19 +23,21 @@ export default function HeroButton({
       onClick={() => router.push(`/${icon}`)}
     >
       {icon == "projects" ? (
-        <ProjectsIcon className="size-25 fill-white" />
+        <ProjectsIcon className="size-12 fill-white md:size-25" />
       ) : null}
       {icon == "experience" ? (
-        <ExperienceIcon className="size-25 fill-white" />
+        <ExperienceIcon className="size-12 fill-white md:size-25" />
       ) : null}
-      {icon == "skills" ? <SkillsIcon className="size-23 fill-white" /> : null}
+      {icon == "skills" ? (
+        <SkillsIcon className="size-10 fill-white md:size-23" />
+      ) : null}
       {icon == "education" ? (
-        <EducationIcon className="size-25 fill-white" />
+        <EducationIcon className="size-12 fill-white md:size-25" />
       ) : null}
       {icon == "contact" ? (
-        <ContactIcon className="size-23 fill-white" />
+        <ContactIcon className="size-12 fill-white md:size-23" />
       ) : null}
-      <p className="mt-2 text-4xl font-bold">{text}</p>
+      <p className="mt-2 text-xl font-bold md:text-4xl">{text}</p>
     </button>
   );
 }
