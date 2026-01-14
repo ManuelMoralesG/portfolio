@@ -15,10 +15,10 @@ const educationData = [
     level: "Bachelor's Degree",
     institution: "Universidad Autónoma de Querétaro",
     career: "Software Engineering",
-    duration: "9 Semesters (2022 - 2027)",
-    degreeMethod: "Automatic graduation by average",
+    duration: "9 Semesters (2022 - In Course)",
+    degreeMethod: "Pending",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Tristique erat dictum ullamcorper ac aliquam pellentesque lectus interdum. Ultrices urna leo pulvinar laoreet quis sit amet pellentesque. Amet diam semper amet nisi egestas quis consequat in diam. Varius nunc turpis nisl facilisis vestibulum viverra at nec. Posuere mi sapien at quis sit gravida et ut ultrices. Id id velit vulputate varius. Nisi orci felis viverra id arcu risus condimentum. Ut nisi tellus cursus tempor facilisis sit. Urna hac condimentum egestas sit mauris commodo. Malesuada in arcu cursus tortor. Cras odio tellus facilisis urna pharetra sollicitudin. Libero turpis vel vitae sed ut vitae tristique integer. Aliquam viverra elementum eu tempor adipiscing egestas. Egestas ac vel orci eget sit nibh pellentesque consectetur nulla",
+      "When I first started university I was fairly tired of engineering, I has spent the last 3 years learning and developing and I didn't take a gap year, so I was a bit overwhelmed by the drastic change between high school and university. I had so many more classes across many more hours and I lived very far from the campus, between that and major construction work through the city I ended up spending about 6 hours a day on the bus just to make it to the campus. I had to re-learn a lot of what I already learnt in high school which was a bit frustrating. After the first couple of semesters the classes really took off, not in terms of amount of work but in the quality of the topics and classes overall, I learned a lot about mobile development, APIs and most importantly, teamwork. I participated in many hackathons and bigger projects, mainly taking up a role as one of the main frontend developers, this time I used a lot more than vanilla HTML and CSS, I learned about web developing frameworks and libraries but I mainly used React and NextJS.",
     image: "/institution-icons/uaq.webp",
   },
   {
@@ -29,7 +29,7 @@ const educationData = [
     duration: "6 Semesters (2019 - 2022)",
     degreeMethod: "Automatic graduation by average",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Tristique erat dictum ullamcorper ac aliquam pellentesque lectus interdum. Ultrices urna leo pulvinar laoreet quis sit amet pellentesque. Amet diam semper amet nisi egestas quis consequat in diam. Varius nunc turpis nisl facilisis vestibulum viverra at nec. Posuere mi sapien at quis sit gravida et ut ultrices. Id id velit vulputate varius. Nisi orci felis viverra id arcu risus condimentum. Ut nisi tellus cursus tempor facilisis sit. Urna hac condimentum egestas sit mauris commodo. Malesuada in arcu cursus tortor. Cras odio tellus facilisis urna pharetra sollicitudin. Libero turpis vel vitae sed ut vitae tristique integer. Aliquam viverra elementum eu tempor adipiscing egestas. Egestas ac vel orci eget sit nibh pellentesque consectetur nulla",
+      "This was my first serious exposure to engineering as a whole. Although this stage of my journey was partially disrupted by the COVID-19 pandemic, I never lost motivation or interest in programming. During this time, I learned the foundations of programming and software engineering, primarily working with Java and C++. However, the area that truly piqued my interest was web development. While I only applied the basics of HTML, CSS, and JavaScript, I quickly realized that this was the aspect of programming I enjoyed the most. Seeing my first completed web page and sharing it with friends and family—who were very encouraging—meant a lot to me, even though the design itself was far from perfect. Beyond the praise, what mattered most was how much I enjoyed the process of developing a web page. In my free time, I also began experimenting with game development by following Unity and C# tutorials, which allowed me to create my first small games.",
     image: "/institution-icons/cbtis.webp",
   },
 ];
@@ -46,7 +46,7 @@ export default function EducationPage() {
       </section>
 
       <Carousel>
-        <CarouselContent className="mt-8 max-w-4xl">
+        <CarouselContent className="mt-8 max-w-4xl items-center">
           {educationData.map((data, index) => (
             <CarouselItem key={index}>
               <div className="bg-education-main rounded-t-xl py-2 text-center">
