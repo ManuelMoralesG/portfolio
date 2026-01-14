@@ -18,7 +18,7 @@ const educationData = [
     duration: "9 Semesters (2022 - In Course)",
     degreeMethod: "Pending",
     description:
-      "When I first started university I was fairly tired of engineering, I has spent the last 3 years learning and developing and I didn't take a gap year, so I was a bit overwhelmed by the drastic change between high school and university. I had so many more classes across many more hours and I lived very far from the campus, between that and major construction work through the city I ended up spending about 6 hours a day on the bus just to make it to the campus. I had to re-learn a lot of what I already learnt in high school which was a bit frustrating. After the first couple of semesters the classes really took off, not in terms of amount of work but in the quality of the topics and classes overall, I learned a lot about mobile development, APIs and most importantly, teamwork. I participated in many hackathons and bigger projects, mainly taking up a role as one of the main frontend developers, this time I used a lot more than vanilla HTML and CSS, I learned about web developing frameworks and libraries but I mainly used React and NextJS.",
+      "When I first started university I was fairly tired of engineering, I has spent the last 3 years learning and developing and I didn't take a gap year, so I was a bit overwhelmed by the drastic change between high school and university. I had so many more classes across many more hours and I lived very far from the campus, between that and major construction work through the city I ended up spending about 6 hours a day on the bus just traveling between the campus and my house the first couple of semesters. I had to re-learn a lot of what I already learnt in high school which was a bit frustrating. After the first couple of semesters the classes really took off, not in terms of amount of work but in the quality of the topics and classes overall, I learned a lot about mobile development, APIs and most importantly, teamwork. I participated in many hackathons and bigger projects, mainly taking up a role as one of the main frontend developers, this time I used a lot more than vanilla HTML and CSS, I learned about web developing frameworks and libraries, of which I mainly stuck with React and NextJS.",
     image: "/institution-icons/uaq.webp",
   },
   {
@@ -41,9 +41,7 @@ export default function EducationPage() {
         Education
       </h1>
 
-      <section className="text-center">
-        <p>Explore my academic journey</p>
-      </section>
+      <p className="text-center">Explore my academic journey</p>
 
       <Carousel>
         <CarouselContent className="mt-8 max-w-4xl items-center">
