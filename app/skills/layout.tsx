@@ -17,7 +17,7 @@ export default function SkillsLayout({
       <SkillsIcon className="absolute -bottom-20 -left-40 z-0 size-180 fill-white/8" />
       <Button
         onClick={() => router.back()}
-        className="bg-skills-main hover:bg-skills-main/80 absolute -top-10 -left-5 z-11 size-20 rotate-12 cursor-pointer hover:scale-105"
+        className="bg-skills-main hover:bg-skills-main/80 absolute -top-9 -left-5 z-11 size-20 rotate-12 cursor-pointer hover:scale-110"
       >
         <BackIcon className="absolute right-2 bottom-1 size-10 -rotate-12" />
       </Button>

@@ -60,6 +60,7 @@
   --color-projects-foreground: var(--projects-foreground);
   --color-skills-main: var(--skills-main);
   --color-skills-background: var(--skills-background);
+  --color-skills-foreground: var(--skills-foreground);
 
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);

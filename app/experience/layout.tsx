@@ -17,7 +17,7 @@ export default function ExperienceLayout({
       <ExperienceIcon className="absolute -bottom-25 -left-10 z-0 size-200 fill-white/8" />
       <Button
         onClick={() => router.back()}
-        className="bg-experience-main hover:bg-experience-main/80 absolute -top-10 -left-5 z-11 size-20 rotate-12 cursor-pointer hover:scale-105"
+        className="bg-experience-main hover:bg-experience-main/80 absolute -top-9 -left-5 z-11 size-20 rotate-12 cursor-pointer hover:scale-105"
       >
         <BackIcon className="absolute right-2 bottom-1 size-10 -rotate-12" />
       </Button>

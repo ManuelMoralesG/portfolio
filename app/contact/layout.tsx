@@ -17,7 +17,7 @@ export default function ContactLayout({
       <ContactIcon className="absolute -bottom-25 z-0 size-170 fill-white/8" />
       <Button
         onClick={() => router.back()}
-        className="bg-contact-main hover:bg-contact-main/80 absolute -top-10 -left-5 z-11 size-20 rotate-12 cursor-pointer hover:scale-105"
+        className="bg-contact-main hover:bg-contact-main/80 absolute -top-9 -left-5 z-11 size-20 rotate-12 cursor-pointer hover:scale-105"
       >
         <BackIcon className="absolute right-2 bottom-1 size-10 -rotate-12" />
       </Button>
