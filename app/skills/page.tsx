@@ -21,7 +21,10 @@ export default function SkillsPage() {
       </p>
 
       <section className="mt-12 flex w-3/4 max-w-4xl items-center justify-between">
-        <button className="bg-skills-foreground hover:bg-skills-main focus:bg-skills-main flex h-90 w-52 flex-col items-center justify-center gap-4 rounded-2xl transition hover:-translate-y-5 hover:cursor-pointer focus:-translate-y-5">
+        <button
+          onClick={() => router.push("skills/softdev")}
+          className="bg-skills-foreground hover:bg-skills-main focus:bg-skills-main flex h-90 w-52 flex-col items-center justify-center gap-4 rounded-2xl transition hover:-translate-y-5 hover:cursor-pointer focus:-translate-y-5"
+        >
           <SoftDevIcon className="size-30 fill-zinc-100" />
           <h2 className="w-26 text-center">Software Development</h2>
         </button>
