@@ -46,29 +46,43 @@ const certificationData = [
 export default function CertificationsPage() {
   return (
     <div className="font-roboto-mono relative z-10 mx-auto flex min-h-screen w-5/6 flex-col items-center justify-center">
-      <h1 className="font-konkhmer mx-auto mb-4 w-full text-left text-6xl font-bold text-zinc-100">
+      <h1 className="font-konkhmer mx-auto mb-2 w-full text-left text-6xl font-bold text-zinc-100">
         Certifications
       </h1>
+
+      <p className="ml-2 w-full text-left">
+        Check out my obtained certifications across many years.
+      </p>
 
       <Carousel
         opts={{
           align: "start",
         }}
         orientation="vertical"
-        className="w-full"
+        className="mt-12 w-full"
       >
-        <CarouselContent className="h-140">
+        <CarouselContent className="mx-auto h-120 w-1/2">
           {certificationData.map((data, index) => (
             <CarouselItem
               key={index}
               className="flex flex-col items-center justify-center"
             >
-              <p>{data.title}</p>
+              <p className="bg-skills-main w-full rounded-t-xl py-2 text-center font-bold">
+                {data.title}
+              </p>
 
-              <Image src={data.image} alt={data.title} width={300} height={0} />
+              <div className="bg-skills-foreground flex h-100 w-full items-center justify-center rounded-b-xl">
+                <Image
+                  src={data.image}
+                  alt={data.title}
+                  width={250}
+                  height={0}
+                />
+              </div>
             </CarouselItem>
           ))}
         </CarouselContent>
+
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>

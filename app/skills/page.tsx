@@ -29,7 +29,10 @@ export default function SkillsPage() {
           <DigitalToolsIcon className="size-30 fill-zinc-100" />
           <h2 className="w-25 text-center">Digital Tools</h2>
         </button>
-        <button className="bg-skills-foreground hover:bg-skills-main focus:bg-skills-main flex h-90 w-52 flex-col items-center justify-center gap-4 rounded-2xl transition hover:-translate-y-5 hover:cursor-pointer focus:-translate-y-5">
+        <button
+          onClick={() => router.push("skills/languages")}
+          className="bg-skills-foreground hover:bg-skills-main focus:bg-skills-main flex h-90 w-52 flex-col items-center justify-center gap-4 rounded-2xl transition hover:-translate-y-5 hover:cursor-pointer focus:-translate-y-5"
+        >
           <LanguagesIcon className="size-30 fill-zinc-100" />
           <h2 className="w-25 text-center">Languages</h2>
         </button>
