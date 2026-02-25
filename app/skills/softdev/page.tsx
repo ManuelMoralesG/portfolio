@@ -20,7 +20,7 @@ export default function SoftDevPage() {
             Frontend Development
           </h2>
 
-          <div className="bg-skills-foreground grid h-100 grid-cols-3 place-items-center items-center justify-center rounded-b-xl">
+          <div className="bg-skills-foreground grid h-110 grid-cols-3 place-items-center items-center justify-center rounded-b-xl">
             <Image
               src="/softdev/js.webp"
               alt="Frontend Development"
@@ -83,7 +83,7 @@ export default function SoftDevPage() {
             Backend Development
           </h2>
 
-          <div className="bg-skills-foreground grid h-100 grid-cols-3 place-items-center items-center justify-center rounded-b-xl">
+          <div className="bg-skills-foreground grid h-110 grid-cols-3 place-items-center items-center justify-center rounded-b-xl">
             <Image
               src="/softdev/csharp.webp"
               alt="Frontend Development"

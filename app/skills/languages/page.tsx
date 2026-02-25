@@ -28,7 +28,7 @@ export default function LanguagesPage() {
       </h1>
 
       <p className="ml-2 w-full text-left">
-        These are the languages in which I have a high level of profiency.
+        These are the languages in which I have a high level of proficiency.
       </p>
 
       <section className="mt-12 flex w-9/10 max-w-5xl items-baseline justify-between">

@@ -1,9 +1,11 @@
 "use client";
 
 import DigitalToolsIcon from "@/shared/components/images/digtools-icon";
+import FileFIcon from "@/shared/components/images/filef-icon";
 import LanguagesIcon from "@/shared/components/images/languages";
 import MaintenanceIcon from "@/shared/components/images/maintenance-icon";
 import SoftDevIcon from "@/shared/components/images/softdev-icon";
+import { Button } from "@/shared/components/ui/button";
 import { useRouter } from "next/navigation";
 
 export default function SkillsPage() {
@@ -45,14 +47,12 @@ export default function SkillsPage() {
         </button>
       </section>
 
-      <section className="w-3/4 max-w-4xl">
-        <button
-          onClick={() => router.push("skills/certifications")}
-          className="bg-skills-foreground hover:bg-skills-main focus:bg-skills-main mt-2 flex w-full flex-col items-center justify-center rounded-xl p-3 transition hover:scale-110 hover:cursor-pointer focus:scale-110"
-        >
-          <p className="font-bold">Check out my certifications!</p>
-        </button>
-      </section>
+      <Button
+        onClick={() => router.push("skills/certifications")}
+        className="bg-skills-foreground hover:bg-skills-main absolute -right-1 -bottom-8 size-30 -rotate-12 cursor-pointer rounded-xl hover:-bottom-1 hover:scale-110"
+      >
+        <FileFIcon className="size-15 fill-white" />
+      </Button>
     </div>
   );
 }
