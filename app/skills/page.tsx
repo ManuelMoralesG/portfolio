@@ -30,7 +30,10 @@ export default function SkillsPage() {
           <SoftDevIcon className="size-30 fill-zinc-100" />
           <h2 className="w-26 text-center">Software Development</h2>
         </button>
-        <button className="bg-skills-foreground hover:bg-skills-main focus:bg-skills-main flex h-90 w-52 flex-col items-center justify-center gap-4 rounded-2xl transition hover:-translate-y-5 hover:cursor-pointer focus:-translate-y-5">
+        <button
+          onClick={() => router.push("skills/digtools")}
+          className="bg-skills-foreground hover:bg-skills-main focus:bg-skills-main flex h-90 w-52 flex-col items-center justify-center gap-4 rounded-2xl transition hover:-translate-y-5 hover:cursor-pointer focus:-translate-y-5"
+        >
           <DigitalToolsIcon className="size-30 fill-zinc-100" />
           <h2 className="w-25 text-center">Digital Tools</h2>
         </button>
@@ -49,7 +52,7 @@ export default function SkillsPage() {
 
       <Button
         onClick={() => router.push("skills/certifications")}
-        className="bg-skills-foreground hover:bg-skills-main absolute -right-1 -bottom-8 size-30 -rotate-12 cursor-pointer rounded-xl hover:-bottom-1 hover:scale-110"
+        className="bg-skills-foreground hover:bg-skills-main absolute -right-1 -bottom-8 size-30 -rotate-12 cursor-pointer rounded-xl hover:-bottom-1 hover:scale-y-110"
       >
         <FileFIcon className="size-15 fill-white" />
       </Button>

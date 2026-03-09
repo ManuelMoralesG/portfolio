@@ -6,7 +6,7 @@ const languageData = [
   {
     language: "Spanish",
     flagLink: "/flags/mexico.webp",
-    description: "My mother tongue",
+    description: "My native tongue",
   },
   {
     language: "English",
@@ -31,7 +31,7 @@ export default function LanguagesPage() {
         These are the languages in which I have a high level of proficiency.
       </p>
 
-      <section className="mt-12 flex w-9/10 max-w-5xl items-baseline justify-between">
+      <section className="mt-12 flex w-11/12 max-w-5xl items-baseline justify-between">
         {languageData.map((data, index) => (
           <div
             key={index}
