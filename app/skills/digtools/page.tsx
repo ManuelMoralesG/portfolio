@@ -1,5 +1,21 @@
 "use client";
 
+import AwsIcon from "@/features/skills/components/images/aws";
+import AzureIcon from "@/features/skills/components/images/azure";
+import BlenderIcon from "@/features/skills/components/images/blender";
+import DaVinciIcon from "@/features/skills/components/images/davinci";
+import EndeavourIcon from "@/features/skills/components/images/endeavour";
+import FigmaIcon from "@/features/skills/components/images/figma";
+import GithubIcon from "@/features/skills/components/images/github";
+import GoogleIcon from "@/features/skills/components/images/google";
+import KritaIcon from "@/features/skills/components/images/krita";
+import LibreOfficeIcon from "@/features/skills/components/images/libre";
+import MintIcon from "@/features/skills/components/images/mint";
+import OfficeIcon from "@/features/skills/components/images/office";
+import OnlyOfficeIcon from "@/features/skills/components/images/only";
+import PhotopeaIcon from "@/features/skills/components/images/photopea";
+import ShotCutIcon from "@/features/skills/components/images/shotcut";
+
 import {
   Accordion,
   AccordionContent,
@@ -14,19 +30,19 @@ const toolsData = [
     tools: [
       {
         name: "Microsoft Office",
-        imageLink: "/tools/",
+        component: OfficeIcon,
       },
       {
         name: "Google Workspace",
-        imageLink: "/tools/",
+        component: GoogleIcon,
       },
       {
         name: "LibreOffice",
-        imageLink: "/tools/",
+        component: LibreOfficeIcon,
       },
       {
         name: "Onlyoffice",
-        imageLink: "/tools/",
+        component: OnlyOfficeIcon,
       },
     ],
   },
@@ -35,12 +51,12 @@ const toolsData = [
     value: "linux-distros",
     tools: [
       {
-        name: "EndeavourOS - KDE (Arch)",
-        imageLink: "/tools/",
+        name: "EndeavourOS",
+        component: EndeavourIcon,
       },
       {
-        name: "Linux Mint - Cinnamon (Ubuntu)",
-        imageLink: "/tools/",
+        name: "Linux Mint",
+        component: MintIcon,
       },
     ],
   },
@@ -50,23 +66,27 @@ const toolsData = [
     tools: [
       {
         name: "Figma",
-        imageLink: "/tools/",
+        component: FigmaIcon,
       },
       {
         name: "Photopea",
-        imageLink: "/tools/",
+        component: PhotopeaIcon,
       },
       {
         name: "DaVinci Resolve",
-        imageLink: "/tools/",
+        component: DaVinciIcon,
       },
       {
         name: "Blender",
-        imageLink: "/tools/",
+        component: BlenderIcon,
       },
       {
         name: "Shotcut",
-        imageLink: "/tools/",
+        component: ShotCutIcon,
+      },
+      {
+        name: "Krita",
+        component: KritaIcon,
       },
     ],
   },
@@ -76,15 +96,15 @@ const toolsData = [
     tools: [
       {
         name: "AWS",
-        imageLink: "/tools/",
+        component: AwsIcon,
       },
       {
         name: "Github",
-        imageLink: "/tools/",
+        component: GithubIcon,
       },
       {
         name: "Azure Devops",
-        imageLink: "/tools/",
+        component: AzureIcon,
       },
     ],
   },
@@ -108,10 +128,20 @@ export default function DigitalToolsPage() {
             <AccordionTrigger className="bg-skills-main rounded-xl px-8 text-lg font-semibold hover:brightness-120">
               {data.name}
             </AccordionTrigger>
-            <AccordionContent className="bg-skills-foreground mx-auto w-49/50 rounded-b-xl px-10 py-4">
-              {data.tools.map((data_t, index_t) => (
-                <p key={index_t}>{data_t.name}</p>
-              ))}
+            <AccordionContent className="bg-skills-foreground mx-auto grid w-49/50 grid-cols-4 gap-y-5 rounded-b-xl px-10 py-6">
+              {data.tools.map((data_t, index_t) => {
+                const Icon = data_t.component;
+
+                return (
+                  <section
+                    key={index_t}
+                    className="flex flex-col items-center gap-2"
+                  >
+                    <Icon className="size-15" />
+                    <p className="text-center">{data_t.name}</p>
+                  </section>
+                );
+              })}
             </AccordionContent>
           </AccordionItem>
         ))}

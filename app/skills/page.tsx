@@ -52,9 +52,9 @@ export default function SkillsPage() {
 
       <Button
         onClick={() => router.push("skills/certifications")}
-        className="bg-skills-foreground hover:bg-skills-main absolute -right-1 -bottom-8 size-30 -rotate-12 cursor-pointer rounded-xl hover:-bottom-1 hover:scale-y-110"
+        className="group bg-skills-foreground hover:bg-skills-main absolute -right-10 -bottom-10 size-25 cursor-pointer rounded-full hover:right-2 hover:bottom-2 hover:scale-115"
       >
-        <FileFIcon className="size-15 fill-white" />
+        <FileFIcon className="size-10 fill-white transition group-hover:scale-150" />
       </Button>
     </div>
   );
