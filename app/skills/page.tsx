@@ -44,7 +44,10 @@ export default function SkillsPage() {
           <LanguagesIcon className="size-30 fill-zinc-100" />
           <h2 className="w-25 text-center">Languages</h2>
         </button>
-        <button className="bg-skills-foreground hover:bg-skills-main focus:bg-skills-main flex h-90 w-52 flex-col items-center justify-center gap-4 rounded-2xl transition hover:-translate-y-5 hover:cursor-pointer focus:-translate-y-5">
+        <button
+          onClick={() => router.push("skills/hardware")}
+          className="bg-skills-foreground hover:bg-skills-main focus:bg-skills-main flex h-90 w-52 flex-col items-center justify-center gap-4 rounded-2xl transition hover:-translate-y-5 hover:cursor-pointer focus:-translate-y-5"
+        >
           <MaintenanceIcon className="size-30 stroke-zinc-100" />
           <h2 className="w-25 text-center">Hardware Maintenance</h2>
         </button>

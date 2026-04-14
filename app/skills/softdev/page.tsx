@@ -2,6 +2,30 @@
 
 import Image from "next/image";
 
+const frontendImageData = [
+  { src: "/softdev/js.webp", alt: "Frontend Development" },
+  { src: "/softdev/ts.webp", alt: "Frontend Development" },
+  { src: "/softdev/tailwind.webp", alt: "Frontend Development" },
+  { src: "/softdev/nextjs.webp", alt: "Frontend Development" },
+  { src: "/softdev/react.webp", alt: "Frontend Development" },
+  { src: "/softdev/native.webp", alt: "Frontend Development" },
+  { src: "/softdev/html2.webp", alt: "Frontend Development" },
+  { src: "/softdev/css.webp", alt: "Frontend Development" },
+  { src: "/softdev/python.webp", alt: "Frontend Development" },
+];
+
+const backendImageData = [
+  { src: "/softdev/csharp.webp", alt: "Backend Development" },
+  { src: "/softdev/docker.webp", alt: "Backend Development" },
+  { src: "/softdev/hono.webp", alt: "Backend Development" },
+  { src: "/softdev/mongo.webp", alt: "Backend Development" },
+  { src: "/softdev/mysql.webp", alt: "Backend Development" },
+  { src: "/softdev/postgres.webp", alt: "Backend Development" },
+  { src: "/softdev/php.webp", alt: "Backend Development" },
+  { src: "/softdev/swagger.webp", alt: "Backend Development" },
+  { src: "/softdev/expressjs.webp", alt: "Backend Development" },
+];
+
 export default function SoftDevPage() {
   return (
     <div className="font-roboto-mono relative z-10 mx-auto flex min-h-screen w-5/6 flex-col items-center justify-center">
@@ -21,60 +45,15 @@ export default function SoftDevPage() {
           </h2>
 
           <div className="bg-skills-foreground grid h-110 grid-cols-3 place-items-center items-center justify-center rounded-b-xl">
-            <Image
-              src="/softdev/js.webp"
-              alt="Frontend Development"
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/softdev/ts.webp"
-              alt="Frontend Development"
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/softdev/tailwind.webp"
-              alt="Frontend Development"
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/softdev/nextjs.webp"
-              alt="Frontend Development"
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/softdev/react.webp"
-              alt="Frontend Development"
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/softdev/native.webp"
-              alt="Frontend Development"
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/softdev/html.webp"
-              alt="Frontend Development"
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/softdev/css.webp"
-              alt="Frontend Development"
-              width={73}
-              height={73}
-            />
-            <Image
-              src="/softdev/python.webp"
-              alt="Frontend Development"
-              width={100}
-              height={100}
-            />
+            {frontendImageData.map((image, index) => (
+              <Image
+                key={index}
+                src={image.src}
+                alt={image.alt}
+                width={90}
+                height={90}
+              />
+            ))}
           </div>
         </div>
 
@@ -84,60 +63,15 @@ export default function SoftDevPage() {
           </h2>
 
           <div className="bg-skills-foreground grid h-110 grid-cols-3 place-items-center items-center justify-center rounded-b-xl">
-            <Image
-              src="/softdev/csharp.webp"
-              alt="Frontend Development"
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/softdev/docker.webp"
-              alt="Frontend Development"
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/softdev/hono.webp"
-              alt="Frontend Development"
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/softdev/mongo.webp"
-              alt="Frontend Development"
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/softdev/mysql.webp"
-              alt="Frontend Development"
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/softdev/postgres.webp"
-              alt="Frontend Development"
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/softdev/php.webp"
-              alt="Frontend Development"
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/softdev/swagger.webp"
-              alt="Frontend Development"
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/softdev/ts.webp"
-              alt="Frontend Development"
-              width={100}
-              height={100}
-            />
+            {backendImageData.map((image, index) => (
+              <Image
+                key={index}
+                src={image.src}
+                alt={image.alt}
+                width={90}
+                height={90}
+              />
+            ))}
           </div>
         </div>
       </section>
