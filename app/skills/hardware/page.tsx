@@ -7,8 +7,8 @@ export default function HardwarePage() {
         </h1>
 
         <p className="ml-2 w-full text-left">
-          I have plenty of experience with basic hardware maintenance, from
-          cleaning to swapping out components.
+          I have plenty of experience in this field, from cleaning to swapping
+          out components to building entire systems from scratch.
         </p>
       </div>
     </div>

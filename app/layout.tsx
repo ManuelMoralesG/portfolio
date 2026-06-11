@@ -55,11 +55,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${ibmPlexMono.variable} ${konkhmerSleokchher.variable} ${robotoMono.variable} antialiased`}
       >
-        <SidebarProvider className="bg-sidebar">
-          {children}
-          <SidebarTrigger className="mt-4 mr-auto size-10 rotate-180" />
-          <AppSidebar />
-        </SidebarProvider>
+        {children}
       </body>
     </html>
   );
