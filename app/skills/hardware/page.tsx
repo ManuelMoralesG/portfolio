@@ -1,3 +1,5 @@
+import ImageStack from "../../../features/skills/hardware/components/ImageStack";
+
 export default function HardwarePage() {
   return (
     <div>
@@ -6,10 +8,12 @@ export default function HardwarePage() {
           Hardware Maintenance
         </h1>
 
-        <p className="ml-2 w-full text-left">
+        <p className="ml-2 w-full text-left mb-4">
           I have plenty of experience in this field, from cleaning to swapping
           out components to building entire systems from scratch.
         </p>
+
+        <ImageStack />
       </div>
     </div>
   );

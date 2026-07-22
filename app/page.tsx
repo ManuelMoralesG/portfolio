@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="max-w-8xl m-auto flex min-h-screen w-6xl flex-col bg-gray-950 font-sans">
+    <div className="m-auto flex min-h-screen flex-col bg-gray-950 font-sans">
       <span className="mt-2 block px-4 text-center font-mono text-xs md:max-w-full md:px-0 md:text-base">
         Welcome to my portfolio! My name is{" "}
         <strong>José Manuel Morales Gómez</strong>.

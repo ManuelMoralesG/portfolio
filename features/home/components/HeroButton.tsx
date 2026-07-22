@@ -19,7 +19,7 @@ export default function HeroButton({
   return (
     <button
       style={{ backgroundColor: color }}
-      className="relative m-[6] flex flex-1 cursor-pointer flex-col items-center justify-center overflow-hidden rounded-2xl transition hover:scale-105 hover:brightness-115 focus:scale-105"
+      className="relative m-[6] flex flex-1 cursor-pointer flex-col items-center justify-center overflow-hidden rounded-2xl transition hover:scale-105 hover:z-1 hover:brightness-115 focus:scale-105 focus:z-1"
       onClick={() => router.push(`/${icon}`)}
     >
       {icon == "projects" ? (
