@@ -62,7 +62,7 @@ export default function ImageStack() {
     setTimeout(finishAnimation, 400);
   }, [animating, order, finishAnimation]);
 
-  const rotations = [-4, -2, 1, 3, 0];
+  const rotations = [-6, -2, 3, 6, 0];
 
   return (
     <div className="mx-auto mt-12 w-full max-w-xl">
@@ -88,7 +88,10 @@ export default function ImageStack() {
             const isTop = stackPos === 0;
             const rotIdx = imgIndex % rotations.length;
             const rotation = rotations[rotIdx];
-            const isEntering = swipe?.direction === "backward" && isTop && swipe.index === imgIndex;
+            const isEntering =
+              swipe?.direction === "backward" && isTop && swipe.index === imgIndex;
+            // Only load actual images for the top 4 cards + any entering card
+            const shouldLoad = stackPos <= 3 || isEntering;
 
             return (
               <div
@@ -100,19 +103,28 @@ export default function ImageStack() {
                   opacity: isTop ? 1 : 0.8,
                   scale: isTop ? "1" : "0.97",
                   ...(isEntering
-                    ? { "--sr": `${rotation}deg`, animation: "swipeIn 0.4s ease-out forwards" } as React.CSSProperties
+                    ? ({
+                        "--sr": `${rotation}deg`,
+                        animation: "swipeIn 0.4s ease-out forwards",
+                      } as React.CSSProperties)
                     : !swipe
                       ? { transition: "all 0.4s cubic-bezier(0.34,1.56,0.64,1)" }
                       : undefined),
                 }}
               >
-                <Image
-                  src={hardwareInfo[imgIndex].image}
-                  alt={`Hardware image ${imgIndex + 1}`}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 512px"
-                  className="rounded-lg border-2 border-gray-200 object-cover shadow-xl"
-                />
+                {shouldLoad ? (
+                  <Image
+                    src={hardwareInfo[imgIndex].image}
+                    alt={`Hardware image ${imgIndex + 1}`}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 512px"
+                    quality={75}
+                    priority={isTop}
+                    className="rounded-2xl border-6 border-stone-900 object-cover shadow-xl"
+                  />
+                ) : (
+                  <div className="size-full rounded-2xl border-6 border-stone-900 bg-stone-800 shadow-xl" />
+                )}
               </div>
             );
           })}
@@ -129,7 +141,8 @@ export default function ImageStack() {
               alt=""
               fill
               sizes="(max-width: 768px) 100vw, 512px"
-              className="rounded-lg border-2 border-gray-200 object-cover shadow-xl"
+              quality={75}
+              className="rounded-lg border-6 border-stone-900 object-cover shadow-xl"
             />
           </div>
         )}
