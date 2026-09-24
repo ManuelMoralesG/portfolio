@@ -1,4 +1,4 @@
-import ImageStack from "../../../features/skills/hardware/components/ImageStack";
+import HardwareCarousel from "../../../features/skills/hardware/components/HardwareCarousel";
 
 export default function HardwarePage() {
   return (
@@ -8,12 +8,12 @@ export default function HardwarePage() {
           Hardware Maintenance
         </h1>
 
-        <p className="ml-2 w-full text-left mb-4">
+        <p className="mb-4 ml-2 w-full text-left">
           I have plenty of experience in this field, from cleaning to swapping
           out components to building entire systems from scratch.
         </p>
 
-        <ImageStack />
+        <HardwareCarousel />
       </div>
     </div>
   );

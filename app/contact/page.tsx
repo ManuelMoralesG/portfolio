@@ -3,7 +3,6 @@
 import ContactIcon from "@/shared/components/images/contact-icon";
 import GithubIcon from "@/shared/components/images/github-icon";
 import LinkedInIcon from "@/shared/components/images/linkedin-icon";
-import TwitterIcon from "@/shared/components/images/twitter-icon";
 
 export default function ContactPage() {
   return (
@@ -13,8 +12,8 @@ export default function ContactPage() {
       </h1>
 
       <section className="text-center">
-        <p>Want to contact me?</p>
-        <p>Here&apos;s my contact information and social media links</p>
+        <p>Want to contact or colaborate with me?</p>
+        <p>Here&apos;s my business email address and social media links</p>
       </section>
 
       <section className="mt-12 flex w-full max-w-xl flex-col gap-4 px-8 md:px-0">
@@ -29,7 +28,7 @@ export default function ContactPage() {
         <a
           target="_blank"
           href="https://github.com/ManuelMoralesG"
-          className="flex items-center justify-start gap-4 rounded-xl bg-zinc-100 p-1 pl-4 transition hover:scale-105 hover:bg-gray-300"
+          className="flex items-center justify-start gap-4 rounded-xl bg-zinc-100 py-2 pl-4 transition hover:scale-105 hover:bg-gray-300"
         >
           <GithubIcon className="fill-contact-main size-10" />
           <p className="text-contact-main">ManuelMoralesG</p>
@@ -37,20 +36,11 @@ export default function ContactPage() {
 
         <a
           target="_blank"
-          href="#"
-          className="flex items-center justify-start gap-4 rounded-xl bg-zinc-100 p-1 pl-4 transition hover:scale-105 hover:bg-gray-300"
+          href="https://www.linkedin.com/in/jose-manuel-morales-gómez-124161234"
+          className="flex items-center justify-start gap-4 rounded-xl bg-zinc-100 py-2 pl-4 transition hover:scale-105 hover:bg-gray-300"
         >
           <LinkedInIcon className="stroke-contact-main size-10" />
           <p className="text-contact-main">José Manuel Morales</p>
-        </a>
-
-        <a
-          target="_blank"
-          href="https://twitter.com/@ChepeXD4"
-          className="flex items-center justify-start gap-4 rounded-xl bg-zinc-100 p-1 pl-4 transition hover:scale-105 hover:bg-gray-300"
-        >
-          <TwitterIcon className="fill-contact-main size-10" />
-          <p className="text-contact-main">@ChepeXD4</p>
         </a>
       </section>
     </div>
